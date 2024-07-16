@@ -1,0 +1,12 @@
+# Build artefacts
+build/
+bin/
+out/
+.next/
+
+# Dependencies
+node_modules/
+packages/
+
+# VS code aux files
+.vscode/

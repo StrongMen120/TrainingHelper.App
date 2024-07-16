@@ -1,0 +1,9 @@
+{
+  "testApiBaseURL": "http://localhost:/5002",
+  "company": "Training",
+  "authentication": {
+    "domain": "dev-l0ei1c70lfx8pmh1.us.auth0.com",
+    "audience": "",
+    "clientId": "uNQPAFTKftThgg8K77UDgElbu9LQEXp1"
+  }
+}

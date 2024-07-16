@@ -1,0 +1,35 @@
+root = true
+
+[*.js]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.ts]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+[*.ts]
+indent_style = space
+indent_size = 2
+
+[*.tsx]
+end_of_line = lf
+insert_final_newline = true
+charset = utf-8
+
+[*.tsx]
+indent_style = space
+indent_size = 2
+
+[*.json]
+indent_style = space
+indent_size = 2
+
+[Makefile]
+indent_style = tab
