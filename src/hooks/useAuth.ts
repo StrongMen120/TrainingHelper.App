@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { AuthContext } from '../context/Auth0Context';
+import { AuthContext } from 'src/context/KeyCloakContext';
 
 const useAuth = () => useContext(AuthContext);
 

@@ -21,14 +21,6 @@ export const RuntimeConfigInstance = lazy<RuntimeConfig>(() => {
     console.debug('Config override', override);
   }
   return {
-    authentication: {
-      domain: assertDefined(process.env.NEXT_PUBLIC__AUTH__DOMAIN),
-      clientId: assertDefined(process.env.NEXT_PUBLIC__AUTH__CLIENT_ID),
-      audience: assertDefined(process.env.NEXT_PUBLIC__AUTH__AUDIENCE),
-      redirectUri: process.env.NEXT_PUBLIC__AUTH__REDIRECT_URL,
-    },
-    userApiBaseUrl: assertDefined(process.env.NEXT_PUBLIC__APIS__USER__BASE_URL),
-    plansApiBaseUrl: assertDefined(process.env.NEXT_PUBLIC__APIS__PLANS__BASE_URL),
     company: assertDefined(process.env.NEXT_PUBLIC__CONFIG__COMPANY),
     showTestSection: assertDefined(process.env.NEXT_PUBLIC__SHOW__TEST__SECTION, (val) => val === 'true'),
     ...override,

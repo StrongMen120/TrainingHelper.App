@@ -24,7 +24,7 @@ class CustomDocument extends Document {
           <style>{'#__next { height: 100%; width: 100%; } body {margin: 0px; padding: 0px;}'}</style>
           <link rel="shortcut icon" href="/static/icons/favicon.ico" type="image/x-icon" />
         </Head>
-        <title>Personal Trainer</title>
+        <title>Tracker</title>
         <body>
           <Main />
           <NextScript />
@@ -49,10 +49,9 @@ CustomDocument.getInitialProps = async (ctx) => {
   const emotionStyleTags = emotionStyles.styles.map((style) => (
     <style data-emotion={`${style.key} ${style.ids.join(' ')}`} key={style.key} dangerouslySetInnerHTML={{ __html: style.css }} />
   ));
-
   return {
     ...initialProps,
-    styles: [...Children.toArray(initialProps.styles), ...emotionStyleTags],
+    styles: [...Children.toArray(initialProps.styles)],
   };
 };
 

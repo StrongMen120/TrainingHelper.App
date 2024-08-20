@@ -1,14 +1,14 @@
-import dynamic from 'next/dynamic';
 import { useRouter } from 'next/router';
+import { Button } from 'primereact/button';
 import { NestedNextPage } from 'src/common/utils/nested-components';
-import { UsersLayoutRenderer } from 'src/modules/user/views/layouts/UserLayout';
+import { TrackerLayoutRenderer } from 'src/modules/dashboard/views/layouts/TrackerLayout';
 
 const MainPage: NestedNextPage = () => {
   const router = useRouter();
-  router.push('/dashboard');
+  router.push('/tracker');
   return null;
 };
 
-MainPage.getLayout = UsersLayoutRenderer;
+MainPage.getLayout = TrackerLayoutRenderer;
 
 export default MainPage;

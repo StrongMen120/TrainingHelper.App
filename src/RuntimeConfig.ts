@@ -1,15 +1,12 @@
 export interface RuntimeConfigBase {
   authentication: {
-    domain: string;
+    url: string;
     clientId: string;
-    audience: string;
-    redirectUri?: string;
+    realm: string;
   };
 }
 
 export interface RuntimeConfig extends RuntimeConfigBase {
-  userApiBaseUrl: string;
-  plansApiBaseUrl: string;
   company: string;
   showTestSection: boolean;
 }
